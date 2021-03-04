@@ -10,6 +10,8 @@ Presentado en el evento "We Lead" de [Women Who Code Monterrey](https://www.meet
 
 - [Conociendo el Playground](#conociendo-el-playground)
 - [Formatos](#formatos)
+- [Tipos de datos](#tipos-de-datos)
+- [Operadores](#operadores)
 
 
 ## Conociendo el Playground
