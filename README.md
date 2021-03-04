@@ -16,7 +16,7 @@ Simplemente hay que ir a [dwlang.fun](https://dwlang.fun/) para poder ver la pá
 
 Del lado izquierdo se encuentra el `input` para el script, en medio es donde se escribe el código (`script`), y en la derecha es donde se encuentra el `output` o el resultado de la transformación.
 
-[Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+:arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
 ## Formatos
 
@@ -43,4 +43,8 @@ payload
 }
 ```
 
-[Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+### Ejercicio
+
+[Ver ejercicio de formatos](ejercicios/ej-01-formatos.md).
+
+:arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
