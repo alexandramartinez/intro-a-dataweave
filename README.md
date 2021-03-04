@@ -5,10 +5,12 @@ Por [Alexandra Martinez](www.alexandramartinez.world)
 
 Presentado en el evento "We Lead" de [Women Who Code Monterrey](https://www.meetup.com/Women-Who-Code-Monterrey).
 
+
 ## Contenidos
 
 - [Conociendo el Playground](#conociendo-el-playground)
 - [Formatos](#formatos)
+
 
 ## Conociendo el Playground
 
@@ -17,6 +19,7 @@ Simplemente hay que ir a [dwlang.fun](https://dwlang.fun/) para poder ver la pá
 Del lado izquierdo se encuentra el `input` para el script, en medio es donde se escribe el código (`script`), y en la derecha es donde se encuentra el `output` o el resultado de la transformación.
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+
 
 ## Formatos
 
@@ -49,6 +52,7 @@ payload
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
+
 ## Tipos de datos
 
 Así como en otros lenguajes de programación existe el String, Integer, Float, Char, Tuple, etc. En DataWeave existen 5 tipos principales de datos:
@@ -63,6 +67,7 @@ Así como en otros lenguajes de programación existe el String, Integer, Float, 
 [Ver ejercicio de tipos de datos](ejercicios/ej-02-tipos-datos.md).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+
 
 ## Operadores 
 
