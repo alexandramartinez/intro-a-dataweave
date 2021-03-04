@@ -5,6 +5,10 @@
 
 Presentado en el evento "We Lead" de [Women Who Code Monterrey](https://www.meetup.com/Women-Who-Code-Monterrey).
 
+## Contenidos
+
+- [Conociendo el Playground](#conociendo-el-playground)
+- [Formatos](#formatos)
 
 ## Conociendo el Playground
 
