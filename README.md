@@ -16,6 +16,8 @@ Simplemente hay que ir a [dwlang.fun](https://dwlang.fun/) para poder ver la pá
 
 Del lado izquierdo se encuentra el `input` para el script, en medio es donde se escribe el código (`script`), y en la derecha es donde se encuentra el `output` o el resultado de la transformación.
 
+[Volver arriba](#contenidos)
+
 ## Formatos
 
 El uso más básico de DataWeave es para transformar datos de un formato a otro. Por ejemplo de `XML` a `JSON`.
@@ -40,3 +42,4 @@ payload
   "message": "Hello world!"
 }
 ```
+[Volver arriba](#contenidos)
