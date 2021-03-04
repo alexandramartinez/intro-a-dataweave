@@ -66,29 +66,14 @@ Así como en otros lenguajes de programación existe el String, Integer, Float, 
 
 ## Operadores 
 
-Se pueden hacer diferentes operaciones con los datos, dependiendo de su tipo. Por ejemplo, sí se pueden concatenar dos strings, pero no se puede concatenar un string y un array.
-
-Puedes hacer esto para concatenar strings:
-```dataweave
-%dw 2.0
-output application/json
----
-"hello" ++ " world"
-```
-
-Pero si intentas concatenar un string y un array, DataWeave te regresa un error:
-```dataweave
-%dw 2.0
-output application/json
----
-"abc" ++ []
-```
+Se pueden hacer diferentes operaciones con los datos, dependiendo de su tipo. 
 
 **Operadores matemáticos**
 * `+` - suma
 * `-` - resta
-* `*` - multiplicacion
-* `/` - division
+* `*` - multiplicación
+* `/` - división
+
 
 **Operadores de igualdad y relacionales**
 * `<` - menor que
