@@ -89,7 +89,7 @@ output application/json
 }
 ```
 
-### Script 4 - usando typeOf()
+### :arrow_forward: Script 4 - usando `typeOf()`
 
 **Script**
 ```dataweave
