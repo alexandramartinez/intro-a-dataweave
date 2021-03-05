@@ -1,7 +1,7 @@
 
 # Intro a DataWeave: El lenguaje de programación de MuleSoft
 
-Por [Alexandra Martinez](www.alexandramartinez.world)
+Por [Alexandra Martinez](https://www.alexandramartinez.world)
 
 Presentado en el evento "We Lead" de [Women Who Code Monterrey](https://www.meetup.com/Women-Who-Code-Monterrey).
 
