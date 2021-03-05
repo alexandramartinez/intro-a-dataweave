@@ -12,7 +12,7 @@ Encuentra rápidamente los scripts que se vieron en el taller.
 
 ## Formatos
 
-### Script 1
+### Script 1 - De XML a JSON
 
 **Input**
 ```xml
@@ -33,7 +33,7 @@ payload
 }
 ```
 
-### Script 2
+### Script 2 - De JSON a CSV
 
 **Input**
 ```json
