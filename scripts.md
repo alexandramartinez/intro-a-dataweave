@@ -69,7 +69,7 @@ Nia,Cortes
 
 ## Tipos de datos
 
-### Script 3 - 5 tipos de datos
+### :arrow_forward: Script 3 - 5 tipos de datos
 
 **Script**
 ```dataweave
