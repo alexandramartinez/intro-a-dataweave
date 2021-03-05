@@ -5,6 +5,10 @@ Por [Alexandra Martinez](https://www.alexandramartinez.world)
 
 Presentado en el evento "We Lead" de [Women Who Code Monterrey](https://www.meetup.com/Women-Who-Code-Monterrey).
 
+Este archivo contiene las explicaciones de lo aprendido en el taller y ejercicios para probar tu conocimiento en cada subtema. 
+
+Para ver directamente los scripts que se presentaron en el taller (sin las explicaciones), ve a este archivo: [scripts.md](scripts.md)
+
 
 ## Contenidos
 
