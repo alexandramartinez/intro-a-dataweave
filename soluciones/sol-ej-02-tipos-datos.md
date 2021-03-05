@@ -16,7 +16,7 @@ typeOf("Hello World!")
 1. `10`
 2. `20.2849484848`
 3. `["a","b",{}]`
-4. `{null}`
+4. `{}`
 5. `not true`
 
 ## Solución
