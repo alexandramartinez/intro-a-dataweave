@@ -89,7 +89,7 @@ output application/json
 }
 ```
 
-### :arrow_forward: Script 4 - usando `typeOf()`
+### :arrow_forward: Script 4 - usando `typeOf()` para confirmar el tipo de dato
 
 **Script**
 ```dataweave
@@ -117,7 +117,7 @@ output application/json
 
 ## Operadores
 
-### Script 5 - operadores matemáticos
+### :arrow_forward: Script 5 - operadores matemáticos
 
 **Script**
 ```dataweave
@@ -145,7 +145,7 @@ output application/json
 }
 ```
 
-### Script 2
+### :arrow_forward: Script 6 - operadores de igualdad
 
 **Script**
 ```dataweave
@@ -177,7 +177,7 @@ output application/json
 }
 ```
 
-### Script 3
+### :arrow_forward: Script 7 - operadores lógicos
 
 **Script**
 ```dataweave
@@ -205,7 +205,7 @@ output application/json
 }
 ```
 
-### Script 4
+### :arrow_forward: Script 8 - operadores para Array
 
 **Script**
 ```dataweave
@@ -247,7 +247,7 @@ output application/json
 }
 ```
 
-### Script 5
+### :arrow_forward: Script 9 - diferencias de operadores de negación
 
 **Script**
 ```dataweave
@@ -273,7 +273,7 @@ output application/json
 
 ## Variables
 
-### Script 1
+### :arrow_forward: Script 10 - variables
 
 **Script**
 ```dataweave
@@ -289,7 +289,7 @@ myStr
 "Hello World"
 ```
 
-### Script 2
+### :arrow_forward: Script 11 - variables como funciones
 
 **Script**
 ```dataweave
@@ -306,7 +306,7 @@ mayus(myStr)
 "HELLO WORLD"
 ```
 
-### Script 3
+### :arrow_forward: Script 12 - variables con tipo de dato
 
 **Script**
 ```dataweave
@@ -323,7 +323,7 @@ mayus(myStr)
 "HELLO WORLD"
 ```
 
-### Script 4
+### :arrow_forward: Script 13 - variables con tipo de dato (error)
 
 **Script**
 ```dataweave
@@ -347,7 +347,7 @@ main (line: 4, column:21)
 
 ## Funciones
 
-### Script 1
+### :arrow_forward: Script 14 - creando funciones
 
 **Script**
 ```dataweave
@@ -363,7 +363,7 @@ mayus("Hello World")
 "HELLO WORLD"
 ```
 
-### Script 2
+### :arrow_forward: Script 15 - función con tipo de dato en el argumento
 
 **Script**
 ```dataweave
@@ -379,7 +379,7 @@ mayus("Hello World")
 "HELLO WORLD"
 ```
 
-### Script 3
+### :arrow_forward: Script 16 - función con tipo de dato de regreso
 
 **Script**
 ```dataweave
@@ -395,7 +395,7 @@ mayus("Hello World")
 "HELLO WORLD"
 ```
 
-### Script 4
+### :arrow_forward: Script 17 - función con más de un argumento y tipo de dato
 
 **Script**
 ```dataweave
@@ -413,7 +413,7 @@ concat("Hello"," World")
 
 ## Condiciones
 
-### Script 1
+### :arrow_forward: Script 18 - `if`/`else` de una condición
 
 **Script**
 ```dataweave
@@ -431,7 +431,7 @@ concat("Hello"," World")
 "Hello World"
 ```
 
-### Script 2
+### :arrow_forward: Script 19 - varias condiciones
 
 **Script**
 ```dataweave
@@ -451,7 +451,7 @@ getCodigo("Mexico")
 "MX"
 ```
 
-### Script 3
+### :arrow_forward: Script 20 - varias condiciones 2
 
 **Script**
 ```dataweave
