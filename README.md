@@ -20,12 +20,18 @@ Simplemente hay que ir a [dwlang.fun](https://dwlang.fun/) para poder ver la pá
 
 Del lado izquierdo se encuentra el `input` para el script, en medio es donde se escribe el código (`script`), y en la derecha es donde se encuentra el `output` o el resultado de la transformación.
 
+[Ver documentación oficial de MuleSoft sobre los principios de la programación funcional](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-language-guide#functional-programming-principles)
+
+[Ver documentación oficial de MuleSoft sobre la estructura de los scripts de DataWeave](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-language-introduction)
+
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
 
 ## Formatos
 
 El uso más básico de DataWeave es para transformar datos de un formato a otro. Por ejemplo de `XML` a `JSON`.
+
+[Ver documentación oficial de MuleSoft sobre formatos](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-formats)
 
 Para hacer esto, solo se tiene que cambiar el tipo de `output`. Ejemplo:
 
@@ -64,6 +70,8 @@ Así como en otros lenguajes de programación existe el String, Integer, Float, 
 * Arrays (`[1, 2, 3]`, `["a","b","c"]`, `[{},1,true,"a"]`)
 * Objects (`{}`, `{"field":"value"}`)
 
+[Ver documentación oficial de MuleSoft sobre tipos de datos](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-types)
+
 ### Ejercicio
 
 [Ver ejercicio de tipos de datos](ejercicios/ej-02-tipos-datos.md).
@@ -75,12 +83,13 @@ Así como en otros lenguajes de programación existe el String, Integer, Float, 
 
 Se pueden hacer diferentes operaciones con los datos, dependiendo de su tipo. 
 
+[Ver documentación oficial de MuleSoft sobre operadores](https://docs.mulesoft.com/mule-runtime/4.3/dw-operators)
+
 **Operadores matemáticos**
 * `+` - suma
 * `-` - resta
 * `*` - multiplicación
 * `/` - división
-
 
 **Operadores de igualdad y relacionales**
 * `<` - menor que
@@ -96,8 +105,79 @@ Se pueden hacer diferentes operaciones con los datos, dependiendo de su tipo.
 * `and` - regresa `true` si todas las condiciones se cumplen
 * `or` - regresa `true` si al menos una condición se cumple
 
+**Operadores para Array**
+* `>>` - anteponer
+* `<<` - adjuntar
+* `+` - adjuntar
+* `-` - remover 
+
 ### Ejercicio
 
 [Ver ejercicio de operadores](ejercicios/ej-03-operadores.md).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+
+
+## Variables
+
+Cuando se crean variables en DataWeave, no se tiene que seleccionar un tipo de dato ni se tiene que inicializar, como en otros lenguajes. 
+
+Como DataWeave es un lenguaje de programación funcional, las variables también son funciones.
+
+[Ver documentación oficial de MuleSoft sobre variables](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-variables)
+
+**Script 1**
+```dataweave
+%dw 2.0
+output application/json
+
+var myStr = "Hello World"
+---
+myStr
+```
+**Output 1**
+```json
+"Hello World"
+```
+
+**Script 2**
+```dataweave
+%dw 2.0
+output application/json
+
+var myStr = "Hello World"
+var mayus = (str) -> upper(str)
+---
+mayus(myStr)
+```
+**Output 2**
+```json
+"HELLO WORLD"
+```
+
+Para asignar tipos de datos a las variables, se escriben dos puntos (`:`) después del nombre de la variable, seguido por el tipo de dato que se le quiere asignar.
+
+**Script**
+```dataweave
+var myStr: String = "Hello World"
+var mayus = (str: String) -> upper(str)
+---
+mayus(myStr)
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+### Ejercicio
+
+[Ver ejercicio de variables](ejercicios/ej-04-variables.md).
+
+:arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+
+
+## Funciones
+
+## Condiciones
+
+## Map
