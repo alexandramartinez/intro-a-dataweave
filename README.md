@@ -248,7 +248,7 @@ El mayor beneficio de asignar tipos de datos a las funciones es para poder usar 
 
 Al igual que en otros lenguajes de programación, existen formas de controlar el "flujo" o la lógica del código usando condiciones. En DataWeave se utiliza `if`/`else`.
 
-Para crear condiciones, se usa primero la palabra clave `if`, seguida de la condición entre paréntesis. Después de esto no es necesario abrir paréntesis (`()`) o llaves (`{}`), ya que DataWeave puede reconocer que el código siguiente pertenece al `if`. 
+Para crear condiciones, se usa primero la palabra clave `if`, seguida de la condición entre paréntesis (`()`). Después de esto no es necesario abrir paréntesis (`()`) o llaves (`{}`), ya que DataWeave puede reconocer que el código siguiente pertenece al `if`. 
 
 A diferencia de otros lenguajes, aquí sí se tiene que agregar un `else` después de un `if`, para asegurarnos de que ambas rutas van a estar cubiertas en el código y siempre se va a asignar un valor sin importar si la condición se cumple o no. Después de crear el código del `if`, se agrega la palabra clave `else` y tampoco es necesario abrir paréntesis o llaves; con escribir código después de esto, DataWeave reconoce que pertenece al `else`.
 
