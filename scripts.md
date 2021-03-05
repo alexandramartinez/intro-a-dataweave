@@ -7,8 +7,8 @@ Encuentra rápidamente los scripts que se vieron en el taller.
 
 ## Links
 
-[dwlang.fun](https://dwlang.fun/)
-[codeshare.io](https://codeshare.io/)
+* [dwlang.fun](https://dwlang.fun/)
+* [codeshare.io](https://codeshare.io/)
 
 ## Formatos
 
