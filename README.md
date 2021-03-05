@@ -63,7 +63,7 @@ payload
 
 ### Ejercicio
 
-[Ver ejercicio de formatos](ejercicios/ej-01-formatos.md).
+[Ver ejercicio de formatos](ejercicios/ej-01-formatos.md#ejercicio-1).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
