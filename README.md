@@ -63,7 +63,7 @@ payload
 
 ## Tipos de datos
 
-Así como en otros lenguajes de programación existe el String, Integer, Float, Char, Tuple, etc. En DataWeave existen 5 tipos principales de datos:
+Así como en otros lenguajes de programación existe el String, Integer, Float, Char, Tuple, etc. En DataWeave existen varios tipos de datos, pero nos vamos a enfocar en estos 5:
 * Strings (`"hello world"`)
 * Numbers (`1`, `2.5`, `-868`)
 * Booleans (`true`, `false`)
