@@ -166,6 +166,9 @@ Para asignar tipos de datos a las variables, se escriben dos puntos (`:`) despuÃ
 
 **Script**
 ```dataweave
+%dw 2.0
+output application/json
+
 var myStr: String = "Hello World"
 var mayus = (str: String) -> upper(str)
 ---
