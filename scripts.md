@@ -3,7 +3,7 @@
 
 Encuentra rápidamente los scripts que se vieron en el taller.
 
-**NOTA:** Aquí también se encuentran las soluciones de los ejercicios. Si quieres hacer los ejercicios por tu cuenta (sin ver las soluciones) es mejor que vayas a la carpeta de [ejercicios](ejercicios/) o que sigas el archivo de [README.md](README.md).
+**NOTA:** Aquí también se encuentran las soluciones de los ejercicios. Si quieres hacer los ejercicios por tu cuenta (sin ver las soluciones) es mejor que vayas a la carpeta de [ejercicios](ejercicios/) o que sigas el archivo de [README.md](README.md#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft).
 
 ## Links
 
