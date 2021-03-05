@@ -33,7 +33,7 @@ payload
 }
 ```
 
-### Script 2 - de JSON a CSV
+### :arrow_forward: Script 2 - de JSON a CSV
 
 **Input**
 ```json
