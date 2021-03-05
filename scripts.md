@@ -12,7 +12,7 @@ Encuentra rápidamente los scripts que se vieron en el taller.
 
 ## Formatos
 
-### Script 1 - De XML a JSON
+### :arrow_forward: Script 1 - de XML a JSON
 
 **Input**
 ```xml
@@ -33,7 +33,7 @@ payload
 }
 ```
 
-### Script 2 - De JSON a CSV
+### Script 2 - de JSON a CSV
 
 **Input**
 ```json
@@ -69,7 +69,7 @@ Nia,Cortes
 
 ## Tipos de datos
 
-### Script 1
+### Script 3 - 5 tipos de datos
 
 **Script**
 ```dataweave
@@ -89,7 +89,7 @@ output application/json
 }
 ```
 
-### Script 2
+### Script 4 - usando typeOf()
 
 **Script**
 ```dataweave
@@ -117,7 +117,7 @@ output application/json
 
 ## Operadores
 
-### Script 1
+### Script 5 - operadores matemáticos
 
 **Script**
 ```dataweave
