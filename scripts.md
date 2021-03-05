@@ -83,7 +83,7 @@ output application/json
 {campo: "valor"} // Objects - {}, {"field":"value"}
 ```
 **Output**
-```
+```json
 {
   "campo": "valor"
 }
@@ -105,7 +105,7 @@ output application/json
 }
 ```
 **Output**
-```
+```json
 {
   "uno": "Number",
   "dos": "Number",
@@ -134,7 +134,7 @@ output application/json
 }
 ```
 **Output**
-```
+```json
 {
   "matematicos": {
     "suma": 2,
@@ -164,7 +164,7 @@ output application/json
 }
 ```
 **Output**
-```
+```json
 {
   "igualdad": {
     "menor": true,
@@ -194,7 +194,7 @@ output application/json
 }
 ```
 **Output**
-```
+```json
 {
   "logicos": {
     "not1": false,
@@ -222,7 +222,7 @@ output application/json
 }
 ```
 **Output**
-```
+```json
 {
   "array": {
     "anteponer": [
@@ -262,11 +262,210 @@ output application/json
 }
 ```
 **Output**
-```
+```json
 {
   "nots": {
     "not1": false,
     "not2": true
   }
 }
+```
+
+## Variables
+
+### Script 1
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+var myStr = "Hello World"
+---
+myStr
+```
+**Output**
+```json
+"Hello World"
+```
+
+### Script 2
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+var myStr = "Hello World"
+var mayus = (str) -> upper(str)
+---
+mayus(myStr)
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+### Script 3
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+var myStr: String = "Hello World"
+var mayus = (str: String) -> upper(str)
+---
+mayus(myStr)
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+### Script 4
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+var myStr: String = 1
+var mayus = (str: String) -> upper(str)
+---
+mayus(myStr)
+```
+**Output**
+```
+Expecting Type: `String`, but got: `1`.
+
+4| var myStr: String = 1
+                       ^
+Location:
+main (line: 4, column:21)
+```
+
+## Funciones
+
+### Script 1
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun mayus(str) = upper(str)
+---
+mayus("Hello World")
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+### Script 2
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun mayus(str: String) = upper(str)
+---
+mayus("Hello World")
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+### Script 3
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun mayus(str: String): String = upper(str)
+---
+mayus("Hello World")
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+### Script 4
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun concat(str1: String, str2: String): String = str1 ++ str2
+---
+concat("Hello"," World")
+```
+**Output**
+```json
+"Hello World"
+```
+
+## Condiciones
+
+### Script 1
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun concat(str1, str2) = 
+    if (str1 is String and str2 is String) str1 ++ str2
+    else null
+---
+concat("Hello"," World")
+```
+**Output**
+```json
+"Hello World"
+```
+
+### Script 2
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun getCodigo(pais) = 
+    if (pais == "Mexico") "MX"
+    else if (pais == "Estados Unidos") "EUA"
+    else if (pais == "Canada") "CA"
+    else "Otro pais"
+---
+getCodigo("Mexico")
+```
+**Output**
+```json
+"MX"
+```
+
+### Script 3
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun esMayor(edadPersona, edadMAyor) = 
+    if (edadPersona > edadMAyor) "Es mayor de edad"
+    else if (edadPersona == edadMAyor) "Es mayor, muy apenas!"
+    else "Es menor de edad"
+---
+esMayor(19,18)
+```
+**Output**
+```json
+"Es mayor de edad"
 ```
