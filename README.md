@@ -13,6 +13,7 @@ Presentado en el evento "We Lead" de [Women Who Code Monterrey](https://www.meet
 - [Tipos de datos](#tipos-de-datos)
 - [Operadores](#operadores)
 - [Variables](#variables)
+- [Funciones](#funciones)
 
 
 ## Conociendo el Playground
@@ -121,13 +122,11 @@ Se pueden hacer diferentes operaciones con los datos, dependiendo de su tipo.
 
 ## Variables
 
-Cuando se crean variables en DataWeave, no se tiene que seleccionar un tipo de dato ni se tiene que inicializar, como en otros lenguajes. 
-
-Como DataWeave es un lenguaje de programación funcional, las variables también son funciones.
+Cuando se crean variables en DataWeave, no se tiene que seleccionar un tipo de dato ni se tiene que inicializar, como en otros lenguajes. Para crear una nueva variable, se tiene que usar la palabra clave `var`, seguido del nombre de la variable y la asignación (usando el signo de igual `=`). Nota que la declaración se tiene que hacer sobre los tres guiones (`---`) del script.
 
 [Ver documentación oficial de MuleSoft sobre variables](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-variables)
 
-**Script 1**
+**Script**
 ```dataweave
 %dw 2.0
 output application/json
@@ -136,12 +135,14 @@ var myStr = "Hello World"
 ---
 myStr
 ```
-**Output 1**
+**Output**
 ```json
 "Hello World"
 ```
 
-**Script 2**
+Como DataWeave es un lenguaje de programación funcional, las variables se pueden usar como funciones.
+
+**Script**
 ```dataweave
 %dw 2.0
 output application/json
@@ -151,7 +152,7 @@ var mayus = (str) -> upper(str)
 ---
 mayus(myStr)
 ```
-**Output 2**
+**Output**
 ```json
 "HELLO WORLD"
 ```
@@ -178,6 +179,69 @@ mayus(myStr)
 
 
 ## Funciones
+
+Al crear funciones en DataWeave, no se tiene que especificar el tipo de dato de los argumentos, o el tipo de dato que va a regresar la función. 
+
+Para crear una nueva función, se usa la palabra clave `fun`, seguido del nombre de la función. Después, entre paréntesis, se escriben los nombres de los argumentos separados por coma (`,`). Finalmente, se asigna el código a la función con el signo de igual (`=`). Nota que la declaración se tiene que hacer sobre los tres guiones (`---`) del script.
+
+No es necesario poner el código de la función entre paréntesis (`()`) o llaves (`{}`). DataWeave puede reconocer que el código siguiente le pertenece a la función.
+
+[Ver documentación oficial de MuleSoft sobre funciones](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-functions)
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun mayus(str) = upper(str)
+---
+mayus("Hello World")
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+Para evitar errores, puedes asignar tipos de datos a los argumentos de las funciones. Al igual que con las variables, se escriben dos puntos (`:`) después del nombre del argumento, seguido por el tipo de dato que se le quiere asignar.
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun mayus(str: String) = upper(str)
+---
+mayus("Hello World")
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+También se le pueden asignar tipos de datos a las funciones (es decir, lo que van a regresar). Esta vez se escriben los dos puntos y el tipo de dato después de los paréntesis donde están los argumentos, o bien, antes del signo de igual.
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun mayus(str: String): String = upper(str)
+---
+mayus("Hello World")
+```
+**Output**
+```json
+"HELLO WORLD"
+```
+
+El mayor beneficio de asignar tipos de datos a las funciones es para poder usar Function Overloading (o sobrecarga de funciones). No se tocará ese tema en este taller, pero puedes leer al respecto [aquí](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-functions#overloading-functions).
+
+### Ejercicio
+
+[Ver ejercicio de funciones](ejercicios/ej-05-funciones.md).
+
+:arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+
 
 ## Condiciones
 

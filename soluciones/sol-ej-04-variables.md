@@ -1,5 +1,5 @@
 
-# Ejercicio 4
+# Solución de ejercicio 4
 
 Define diferentes variables para los tipos de dato `String`, `Number`, `Boolean`, `Array` y `Object`. 
 

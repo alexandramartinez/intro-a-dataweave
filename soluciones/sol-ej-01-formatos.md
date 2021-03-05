@@ -27,6 +27,9 @@ Alex,Mtz
 Grecia,Castaldi
 Nia,Cortes
 ```
+
+## Solución
+
 **Script**
 ```dataweave
 %dw 2.0
