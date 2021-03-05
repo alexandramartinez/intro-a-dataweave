@@ -81,7 +81,7 @@ Así como en otros lenguajes de programación existe el String, Integer, Float, 
 
 ### Ejercicio
 
-[Ver ejercicio de tipos de datos](ejercicios/ej-02-tipos-datos.md).
+[Ver ejercicio de tipos de datos](ejercicios/ej-02-tipos-datos.md#ejercicio-2).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
@@ -120,7 +120,7 @@ Se pueden hacer diferentes operaciones con los datos, dependiendo de su tipo.
 
 ### Ejercicio
 
-[Ver ejercicio de operadores](ejercicios/ej-03-operadores.md).
+[Ver ejercicio de operadores](ejercicios/ej-03-operadores.md#ejercicio-3).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
@@ -178,7 +178,7 @@ mayus(myStr)
 
 ### Ejercicio
 
-[Ver ejercicio de variables](ejercicios/ej-04-variables.md).
+[Ver ejercicio de variables](ejercicios/ej-04-variables.md#ejercicio-4).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
@@ -243,7 +243,7 @@ El mayor beneficio de asignar tipos de datos a las funciones es para poder usar 
 
 ### Ejercicio
 
-[Ver ejercicio de funciones](ejercicios/ej-05-funciones.md).
+[Ver ejercicio de funciones](ejercicios/ej-05-funciones.md#ejercicio-5).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
@@ -296,7 +296,7 @@ getCodigo("Mexico")
 
 ### Ejercicio
 
-[Ver ejercicio de condiciones](ejercicios/ej-06-condiciones.md).
+[Ver ejercicio de condiciones](ejercicios/ej-06-condiciones.md#ejercicio-6).
 
 :arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
 
