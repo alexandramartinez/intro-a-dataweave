@@ -14,6 +14,7 @@ Presentado en el evento "We Lead" de [Women Who Code Monterrey](https://www.meet
 - [Operadores](#operadores)
 - [Variables](#variables)
 - [Funciones](#funciones)
+- [Condiciones](#condiciones)
 
 
 ## Conociendo el Playground
@@ -245,4 +246,53 @@ El mayor beneficio de asignar tipos de datos a las funciones es para poder usar 
 
 ## Condiciones
 
-## Map
+Al igual que en otros lenguajes de programación, existen formas de controlar el "flujo" o la lógica del código usando condiciones. En DataWeave se utiliza `if`/`else`.
+
+Para crear condiciones, se usa primero la palabra clave `if`, seguida de la condición entre paréntesis. Después de esto no es necesario abrir paréntesis (`()`) o llaves (`{}`), ya que DataWeave puede reconocer que el código siguiente pertenece al `if`. 
+
+A diferencia de otros lenguajes, aquí sí se tiene que agregar un `else` después de un `if`, para asegurarnos de que ambas rutas van a estar cubiertas en el código y siempre se va a asignar un valor sin importar si la condición se cumple o no. Después de crear el código del `if`, se agrega la palabra clave `else` y tampoco es necesario abrir paréntesis o llaves; con escribir código después de esto, DataWeave reconoce que pertenece al `else`.
+
+[Ver documentación oficial de MuleSoft sobre control de flujo (condiciones)](https://docs.mulesoft.com/mule-runtime/4.3/dataweave-flow-control)
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun concat(str1, str2) = 
+    if (str1 is String and str2 is String) str1 ++ str2
+    else null
+---
+concat("Hello"," World")
+```
+**Output**
+```json
+"Hello World"
+```
+
+Se puede agregar más de una condición usando las palabras `else if` antes del último `else`. En realidad lo que se hace es que se crea otro `if` dentro del `else`, anidando así varias declaraciones de `if/else` para contemplar diferentes condiciones.
+
+**Script**
+```dataweave
+%dw 2.0
+output application/json
+
+fun getCodigo(pais) = 
+    if (pais == "Mexico") "MX"
+    else if (pais == "Estados Unidos") "EUA"
+    else if (pais == "Canada") "CA"
+    else "Otro pais"
+---
+getCodigo("Mexico")
+```
+**Output**
+```json
+"MX"
+```
+
+### Ejercicio
+
+[Ver ejercicio de condiciones](ejercicios/ej-06-condiciones.md).
+
+:arrow_up_small: [Volver arriba](#intro-a-dataweave-el-lenguaje-de-programación-de-mulesoft)
+
